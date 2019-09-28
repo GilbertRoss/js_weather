@@ -41,3 +41,34 @@ body {
 .degree-section h2 {
     font-size: 40px;
 }
+
+.flex-container {
+    padding: 0;
+    margin: 50px;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.forecast {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.forecast-items {
+    margin: 10px;
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.day1,
+.day2,
+.day3,
+.day4 {
+    text-align: center;
+}
