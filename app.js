@@ -10,13 +10,14 @@ window.addEventListener('load', () => {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            console.log(lat);
-            console.log(long);
+            //console.log(lat);
+            //console.log(long);
             const locApi = 'https://api.opencagedata.com/geocode/v1/json?key=0436b9cf8d8f43b2b380a8475454752d&q=' + lat + '%2C+' + long + '&pretty=1&no_annotations=1';
             const proxy = "https://cors-anywhere.herokuapp.com/";
             const api = proxy + "https://api.darksky.net/forecast/37c53c277cfd91db0496877661bf2e87/" + lat + "," + long + "?units=auto&lang=it";
-            //console.log(api);
-            console.log(locApi)
+            console.log(api);
+            console.log(locApi);
+
 
             fetch(locApi)
                 .then(loc_response => {
