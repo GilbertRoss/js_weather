@@ -31,8 +31,8 @@ window.addEventListener('load', () => {
                 .then(loc => {
                     const lo = loc.results;
                     const { components } = lo[0];
-                    const { city, country } = components;
-                    locationTimezone.textContent = country + '/' + city;
+                    const { city } = components;
+                    locationTimezone.textContent = city;
 
                 });
 
